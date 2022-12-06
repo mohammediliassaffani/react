@@ -10,6 +10,11 @@ class App extends Component {
       robots: robots,
       searchfild: '',
     }
+    console.log('2')
+  }
+
+  componentDidMount() {
+    console.log('1')
   }
 
   onSearchChange = (event) => {
@@ -17,6 +22,7 @@ class App extends Component {
   }
 
   render() {
+    console.log('3')
     const robotsFilitters = this.state.robots.filter((robot) => {
       return robot.name
         .toLowerCase()
