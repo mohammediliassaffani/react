@@ -16,6 +16,6 @@ const promise3 = new Promise((resolve, reject) => {
 const promise4 = new Promise((resolve, reject) => {
   setTimeout(resolve, 5000, 'hoaaaa')
 })
-promise.all([promise, promise2, promise3, promise4]).then((value) => {
+Promise.all([promise, promise2, promise3, promise4]).then((value) => {
   console.log(value)
 })
